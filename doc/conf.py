@@ -27,4 +27,19 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = "pydata_sphinx_theme"
 html_static_path = ['_static']
 
-
+html_theme_options = {
+  "icon_links": [
+    {
+      "name": "Latest Docs",
+      "url": "https://github.com/<your-org>/<your-repo>",
+      "icon": "fa-brands fa-dev",
+      "type": "fontawesome",
+    },
+    {
+      "name": "Stable Docs",
+      "url": "https://github.com/<your-org>/<your-repo>",
+      "icon": "fa-solid fa-box-archive",
+      "type": "fontawesome",
+    },
+  ],
+}

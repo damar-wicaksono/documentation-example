@@ -27,10 +27,4 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = "pydata_sphinx_theme"
 html_static_path = ['_static']
 
-html_theme_options = {
-  "external_links": [
-      {
-          "stable doc": "link-one-name",
-          "url": "https://<link-one>"},
-  ],
-}
+

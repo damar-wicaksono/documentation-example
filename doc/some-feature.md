@@ -16,3 +16,4 @@ Let's make a list (empty surrounding lines required):
 - item 5
 - item 6
 - item 7
+- item 8

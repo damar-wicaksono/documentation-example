@@ -5,12 +5,9 @@ on:
     branches: ["dev", "main"]
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  docs:
-    runs-on: ubuntu-latest
+  pages:
+    runs-on: ubuntu-20.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -18,9 +15,5 @@ jobs:
       pages: write
       id-token: write
     steps:
-      - uses: actions/setup-python@v5
-      - name: Install dependencies
-        run: |
-          pip install sphinx sphinx_rtd_theme myst_parser
-      - name: deployment
-        uses: sphinx-notes/pages@v3
+    - id: deployment
+      uses: sphinx-notes/pages@v3
